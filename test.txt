@@ -3,3 +3,5 @@ Hello World!
 ??
 Added another line
 To test 'git status'
+To test comeback
+To test branch switch
