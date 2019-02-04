@@ -1,0 +1,31 @@
+git:
+
+$git --version												Get gitbash version
+$git config --global user.name "Dmytro Trukhym"				Set your username
+$git config --global user.email "truhym@ukr.net"			Set your email
+$cd C:/Users .... 											Get into your directory
+$mkdir gitname												Create 'gitname' in your directory. cd to it after!!!
+$git init													Initialize empty Git repository
+$ls -a														Check whats inside our folder. Can get inside .git/ after
+$ls 														Check whats inside your directory
+$git config user.name "Test Name"							Local configurations only for this project
+$git config user.email "Test@email.com						Local configurations only for this project
+$nano test.txt												Create a new file in directory
+$git add test.txt											Add file to 'commite candidate'
+$git commit -m "Test Comment"								Commite as master '-m' and add comment '"TestComment"'. Can't commit without adding!
+$gitk														Opens git commits
+$git status													Get git status
+$git add *													Add all changed files
+$git add .													Add all changed files in this directory
+$git log													git history
+$git checkout hashcode										Ctrl+Z to commit on 'hashcode'
+$git checkout master										Go back to latest commit
+$git revert HEAD											Delete last commit
+$git branch													Get in what branch you are working in
+$git checkout -b newbranch									Create a new branch
+$git checkout master										Switch to new branch
+$git merge newbranch										When your on 'master' branch type 'merge' to add everything from 'newbranch' to your 'master' branch
+$git clone													Ctrl+c - Ctrl+v
+$git remote add origin https://								Add to local repository url to remote repository
+$git push -u origin master									Push from local to remote
+$git push 													Push changes
