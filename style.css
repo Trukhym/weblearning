@@ -46,3 +46,42 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
+caption{
+	color: navy;
+	font-weight: bold;
+	margin-left: 20px;
+	font-size:20px;
+	font-family:verdana;
+	text-align:center;
+	padding: 15px;
+}
+
+table {
+  width:100%;
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	margin-left:auto; 
+    margin-right:auto;
+	empty-cells: hide;
+}
+
+th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 10px;
+	empty-cells: hide;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+}

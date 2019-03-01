@@ -22,6 +22,12 @@ q - quote
 blockquote - block with quote
 abbr - abbreviation. if you hover - shows the full name
 address - address
+table - table
+	tr - column raw
+		th - column header (name)
+		td - column values
+	caption - name of the table
+	
 bdo dir="rtl" - text from right to left
 picture - one view - one imgae, another view - another image
 Image maps: <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
@@ -36,6 +42,8 @@ alt - alternate text (e.g. if no image appeared)
 style - styling of an element( e.g. color, font, size)
 title - if you hover = you can see text from title
 href - link
+colspan - to skip a column in table ( <th colspan="2">Name/Surname</th> )
+rowspan - to skip a row in table ( <th rowspan="2">Telephone:</th> )
  -->
 <!--CSS helper
 CSS can be added to HTML elements in 3 ways:
@@ -43,36 +51,78 @@ CSS can be added to HTML elements in 3 ways:
  -Internal - by using a <style> element in the <head> section
  -External - by using an external CSS file
  -->
+<!--Info
+Rebecca Quin (born 30 January 1987) is an Irish professional wrestler. She is currently signed to WWE under the ring name Becky Lynch, where she performs on the SmackDown brand.
+
+Quin began training as a professional wrestler in June 2002. Initially working in Ireland and occasionally teaming with her brother using the ring name Rebecca Knox, she soon expanded her career into the rest of Europe and North America on the independent circuit, wrestling regularly for various promotions. She most notably competed in Elite Canadian Championship Wrestling and became the first wrestler to win the SuperGirls Championship in June 2005.
+
+In September 2006, Quin suffered a severe head injury during a match in Germany which kept her away from professional wrestling for several years. She returned in late 2012 and signed a contract with World Wrestling Entertainment (WWE) in 2013, reporting to the developmental territory NXT. Following her arrival on WWE's main roster in July 2015, she became the inaugural SmackDown Women's Champion at Backlash 2016 and since held the title twice as of December 2018. In January 2019, she won the 2019 women's Royal Rumble match. -->
 <head>
-<title> My Title </title>
+<title> Beck Lynch </title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <ul>
 	<li> 
 	<a href="#h2">Jump to h2</a>
 	</li>
 </ul>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"
 </head>
 <body>
-<h1 id="h1"> Beck Lynch </h1>
+<script>
+function myFunction() {
+	document.getElementById("quiz").style.color = "red";
+}
+</script>
+<header id="header" role="banner">Header for banner and logo :)</header> <!--first block -->
+<h1 id="h1"> Beck Lynch </h1> <!-- second block -->
 <h2 id="h2"> Fan page </h2>
 <a href="https://www.google.com"> Link to gugle</a>
-<p><em> We can see Becky below </em></p>
-<img src="img/becky.gif" title="Ты попался на квест, нажми и получи Pepegу" alt="no Becky :(" width="150" height="200">
-<br>
-<button>Click on me</button>
-<hr>
-<p><strong> WM opponent </strong></p>
+<div style="background-color:pink;color:white;padding:20px;">
+	<div>
+	<p><em> About Becky </em></p> <!-- third block -->
+	<img src="img/becky.gif" title="Ты попался на квест, нажми и получи Pepegу" alt="no Becky :(" width="150" height="200">
+	<br>
+	<button type="button" onclick="myFunction()">Click on me</button>
+	<hr>
+</div>
+<p id="quiz"><strong> WM opponent </strong></p> <!-- fourth block -->
 <ul>
 	<li style="color:navy">Charlotka</li>
 	<li style="color:navy">Ronni</li>
 	<li style="color:navy">Asuka</li>
 </ul>
 <hr>
-<p> Po pivku? </p>
+<p id="quiz"><strong> Po pivku? </strong></p>
 <ol>
-	<li>OFC</li>
-	<li>GO</li>
-	<li>Po 2</li>
+	<li style="color:navy">Charlotka</li>
+	<li style="color:navy">Ronni</li>
+	<li style="color:navy">Asuka</li>
 </ol>
+</div>
+<table id="t01"> <!-- fifth block -->
+<caption align="center">Becky win/loss record</caption>
+<br>
+  <tr>
+	<th></th>
+    <th>Matches</th>
+    <th>Wins</th> 
+    <th>Losses</th>
+	<th>Draws</th>
+  </tr>
+  <tr>
+	<td>№</td>
+    <td>677</td>
+    <td>419</td>
+    <td>249</td>
+	<td>9</td>
+  </tr>
+   <tr>
+	<td>%</td>
+    <td>100%</td>
+    <td>61.9%</td>
+    <td>36.8%</td>
+	<td>1.3%</td>
+  </tr>
+</table>
 </body>
 </html>
